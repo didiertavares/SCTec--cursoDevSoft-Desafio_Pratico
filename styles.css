@@ -1,28 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
-    margin: 5px;
-    border: 2px solid black;
-    border-radius: 3px;
+    border: 3px solid black;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
-    display: grid;
-    grid-template-rows: 2fr 13fr 1fr;
+    min-height: 100vh;
 }
 header{
-    margin: 5px;
     border: 2px solid black;
     border-radius: 3px;
-    padding: 5px;
-    position: sticky;
-    position: -webkit-sticky;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
     /*justify-self: center;*/
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: auto 1fr;
-
     /*display: flex;
     flex: column;
     align-items: center;
@@ -32,41 +22,98 @@ nav{
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
-
 }
 main{
-    margin: 5px;
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
+    background-color: lightgray;
 }
 section{
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
-    margin-bottom: 5px;
 }
-h1{
-    color: blue;
+#sobremim{
+    background: gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 10px;
+}
+#sobreFormacao{
+    background: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 10px;
+}
+.sobreBox{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: yellow;
+    margin: 20px;
+    padding: 30px;
+    text-align: justify;
+}
+.formBox{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: lightblue;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+ul{
+    list-style: none;
+    list-style-type: square;
+}
+h2{
     justify-self: center;
 }
-#formacao div{
-    border: 2px solid black;
-    border-radius: 3px;
-    padding: 5px;
+h4{
+    justify-self: center;
 }
-#projetos{
+#sobreProjetos{
+    background: red;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 10px;
+}
+.projBox{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: green;
+    margin: 20px;
+    padding: 10px;
+    height: 5em;
+}
+/* #box2{
+    background-image: src('./14174600-imprimir-amostras-de-cores-pantone-gratis-foto')
+} */
+.lista-contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contatoBox{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
 }
 footer{
-    margin: 5px;
+    /* margin: 5px; */
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
-    position: relative;
-    height: 40px;
-    background-color: lightblue;
+    /* height: 40px; */
+    background-color: lightpink;
     text-align: center;
-    align-content: center;
+    /* align-content: center; */
 }

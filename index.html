@@ -7,75 +7,118 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div id="nome">
-            <p>Didier E. TAVARES</p>
-            <p>portfolio</p>
-        </div>
-        <nav id="menu">
-            <p>Sobre mim</p>
-            <p>Habilidades técnicas</p>
-            <p>Soft skills</p>
-            <p>Minha formação</p>
-            <p>Meus projetos</p>
-        </nav>
-    </header>
+    <header>Didier E. TAVARES</header>
+    
+    <nav id="menu">
+        <p>Sobre mim</p>
+        <p>Habilidades técnicas</p>
+        <p>Soft skills</p>
+        <p>Minha formação</p>
+        <p>Meus projetos</p>
+    </nav>
     <main>
         <section id="sobremim">
-            <h1>Sobre mim</h1>
-            <div>
-                <p>atualmente estudando programação</p>
-                <p>apaixonado desde a infância por computadores, seu potencial e linguagens.</p>
-                <p>após me formar trabalhar em artes e administração de empresas, volto à minha paixão inicial me reorientando profissionalmente para o setor de desenvolvimento web e tecnologia.</p>
-            </div>
-        </section>
-        <section id="habTecnicas">
-            <h1>Habilidades técnicas</h1>
-            <div>
-                <p>Idiomas</p>
-                    <p>francês - fluente</p>
-                    <p>. inglês - nível upper intermediate: excelente compreensão escrita e sonora / fluidez média a avançada em conversas com nativos</p>
-                <p> Competências & experiência:</p>
-                    <p>Administração de Empresas: matemática contábil & financeira, marketing, estratégia comercial</p>
-                <p> Hobbies: prática musical, leitura, cozinha & DIY</p>
-            </div>
-        </section>
-        <section id="habPessoais">
-            <h1>Soft skills</h1>
-            <div>
-                <p>boa capacidade de escuta e cooperação</p>
-                <p>boa cultura geral: sei aplicá-la pontualmente, se necessário, para lubrificar ambiente corporativo, formal ou informalmente.</p>
-                <p>experiência de ensino: comunicação fluida, mas objetiva e seletiva</p>
-                <p>de trato expansivo, sempre respeitador do espaço e conforto alheios</p>
-                <p>cooperativo com espírito de time, mas propósito definido</p>
-            </div>
-        </section>
-        <section>
-            <h1 id="formacao">Minha formação</h1>
-                <div id="formcPrev">
-                    <p>previamente</p>
-                    <p>FAAP / SP - Comunicação audiovisual & Propaganda</p>
-                    <p>Université de Montpellier / FR  - Graduação e Pós-Graduação em Música e Musicologia</p>
-                    <p>Université de Toulouse I / FR - Master em Administração de Empresas</p>
+            <div class="sobreBox">
+                <h2>Sobre mim</h2>
+                <div>
+                    <p>atualmente estudando programação</p>
+                    <p>apaixonado desde a infância por computadores, seu potencial e linguagens.</p>
+                    <p>após me formar e trabalhar em artes e administração de empresas, volto à minha paixão inicial me reorientando profissionalmente para o setor de desenvolvimento web e tecnologia.</p>
                 </div>
-                <div id="formcAtual"">
-                    <p>atualmente</p>
-                    <p>lógica de programação iniciante e intermediária</p>
-                    <p>Python iniciante e intermediário (interrompido)</p>
-                    <p>HTML: inniciante</p>
-                    <p>CSS: iniciante</p>
-                    <p>Javascript: iniciante</p>
-                </div>
-        </section>
-        <section>
-            <h1 id="projetos">Meus projetos</h1>
-            <div>
-                <p>projeto 1</p>
-                <p>projeto 2</p>
-                <p>projeto 3</p>
-                <p>projeto 4</p>
             </div>
-
+            <div class="sobreBox">
+                <h2>Habilidades técnicas</h2>
+                <div>
+                    <p>Idiomas</p>
+                        <p>francês - fluente</p>
+                        <p>inglês - upper intermediate: compreensão escrita e sonora; fluidez média em conversas com nativos
+                    <p> Competências & experiência:</p>
+                        <p>Administração de Empresas: matemática contábil & financeira, marketing, estratégia comercial</p>
+                    <p> Hobbies: prática musical, leitura, cozinha & DIY</p>
+                </div>
+            </div>
+            <div class="sobreBox">
+                <h2>Soft skills</h2>
+                <div>
+                    <p>boa capacidade de escuta e cooperação</p>
+                    <p>boa cultura geral: sei aplicá-la pontualmente, se necessário, para lubrificar ambiente corporativo, formal ou informalmente.</p>
+                    <p>experiência de ensino: comunicação fluida, mas objetiva e seletiva</p>
+                    <p>de trato expansivo, sempre respeitando espaço e conforto alheios</p>
+                    <p>cooperativo com espírito de time, mas propósito definido</p>
+                </div>
+            </div>
+        </section>
+        <h2>Formação</h2>
+        <section id="sobreFormacao">
+            <div class="formBox">                
+                <h4>ATUALMENTE</h4>
+                <ul>
+                    <li>Lógica de programação: iniciante</li>
+                    <li>Python: iniciante</li>
+                    <li>HTML: iniciante</li>
+                    <li>CSS: iniciante</li>
+                    <li>Javascript: iniciante</li>
+                </ul>
+            </div>
+            <div class="formBox">
+                <h4>PRÉVIA</h4>
+                <ul>
+                    <li>FAAP / SP - Comunicação audiovisual & Propaganda</li>
+                    <li>Université de Montpellier / FR  - Graduação e Pós-Graduação em Música e Musicologia</li>
+                    <li>Université de Toulouse I / FR - Master em Administração de Empresas</li>
+                </ul>
+            </div>
+        </section>
+        <h2 id="projetos">Meus projetos</h2>
+        <section id="sobreProjetos">
+            <div class="projBox" id="box1">
+                <h3>To-Do List</h3>
+                <p>Gerenciador de tarefas no dia a dia</p>
+                <a href="#"></a>
+            </div>
+            <div class="projBox" id="box2">
+                <h3>Color Shuffler</h3>
+                <p>Randomizador de cores no desktop</p>
+                <a href="#"></a>
+            </div>
+            <div class="projBox" id="box3">
+                <h3>Pomodoro Timer</h3>
+                <p>Timer de tarefas</p>
+                <a href="#"></a>
+            </div>
+            <div class="projBox" id="box4">
+                <h3>Calculadora</h3>
+                <p>aplicativo para realizar operações matemáticas</p>
+                <a href="#"></a>
+            </div>
+        </section>
+        <h2 id="contato">Entre em contato</h2>
+        <section id="formContato">
+            <div class="redes-sociais">
+                <div class="contatoBox">
+                    <a href="#">Github</a>
+                </div>
+                <div class="contatoBox">
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="contatoBox">
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="lista-contatos">
+                <div class="contatoBox">
+                    <strong>Email</strong><br>
+                    <span>contato@devforce-projects.com</span>
+                </div>
+                <div class="contatoBox">
+                    <strong>Telefone</strong><br>
+                    <span>+55 48 99822-4420</span>
+                </div>
+                <div class="contatoBox">
+                    <strong>Endereço</strong><br>
+                    <span>Centro, Florianópolis / SC</span>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
