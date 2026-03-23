@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Didier E. TAVARES</header>
-    
-    <nav id="menu">
-        <p>Sobre mim</p>
-        <p>Habilidades técnicas</p>
-        <p>Soft skills</p>
-        <p>Minha formação</p>
-        <p>Meus projetos</p>
-    </nav>
+    <header>
+        <nav>
+            <button id="reducedMenu">=</button>
+            <ul class="menuList" id="menuList">
+                <li><a href="#sobre"">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#softskills">Soft skills</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Didier E. TAVARES</h1>
+        <p>Desenvolvedor... <br>em desenvolvimento</p>
+    </header>
     <main>
         <section id="sobremim">
-            <div class="sobreBox">
+            <div class="sobreBox" id="sobre">
                 <h2>Sobre mim</h2>
                 <div>
                     <p>atualmente estudando programação</p>
@@ -26,29 +32,28 @@
                     <p>após me formar e trabalhar em artes e administração de empresas, volto à minha paixão inicial me reorientando profissionalmente para o setor de desenvolvimento web e tecnologia.</p>
                 </div>
             </div>
-            <div class="sobreBox">
+            <div class="sobreBox" id="habilidades">
                 <h2>Habilidades técnicas</h2>
                 <div>
-                    <p>Idiomas</p>
-                        <p>francês - fluente</p>
-                        <p>inglês - upper intermediate: compreensão escrita e sonora; fluidez média em conversas com nativos
-                    <p> Competências & experiência:</p>
-                        <p>Administração de Empresas: matemática contábil & financeira, marketing, estratégia comercial</p>
+                    
+                    <p>inglês - upper intermediate: compreensão escrita e sonora; fluidez média em conversas com nativos
+                    <p>francês - fluente</p>
+                    <p>Administração de Empresas: matemática contábil & financeira, marketing, estratégia comercial</p>
                     <p> Hobbies: prática musical, leitura, cozinha & DIY</p>
                 </div>
             </div>
-            <div class="sobreBox">
+            <div class="sobreBox" id="softskills">
                 <h2>Soft skills</h2>
                 <div>
                     <p>boa capacidade de escuta e cooperação</p>
-                    <p>boa cultura geral: sei aplicá-la pontualmente, se necessário, para lubrificar ambiente corporativo, formal ou informalmente.</p>
+                    <p>cooperativo com espírito de time, mas propósito definido</p>
                     <p>experiência de ensino: comunicação fluida, mas objetiva e seletiva</p>
                     <p>de trato expansivo, sempre respeitando espaço e conforto alheios</p>
-                    <p>cooperativo com espírito de time, mas propósito definido</p>
+                    <p>boa cultura geral: sei aplicá-la pontualmente, se necessário, para lubrificar ambiente corporativo, formal ou informalmente.</p>
                 </div>
             </div>
         </section>
-        <h2>Formação</h2>
+        <h2 id="formacao">Formação</h2>
         <section id="sobreFormacao">
             <div class="formBox">                
                 <h4>ATUALMENTE</h4>
@@ -91,15 +96,15 @@
                 <p>aplicativo para realizar operações matemáticas</p>
                 <a href="#"></a>
             </div>
-        </section>
-        <h2 id="contato">Entre em contato</h2>
+        </section  id="contato">
+        <h2>Entre em contato</h2>
         <section id="formContato">
             <div class="redes-sociais">
                 <div class="contatoBox">
-                    <a href="#">Github</a>
+                    <a href="#https://github.com/">Github</a>
                 </div>
                 <div class="contatoBox">
-                    <a href="#">LinkedIn</a>
+                    <a href="#https://www.linkedin.com/">LinkedIn</a>
                 </div>
                 <div class="contatoBox">
                     <a href="#">Instagram</a>
