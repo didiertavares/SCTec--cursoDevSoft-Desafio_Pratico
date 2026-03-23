@@ -1,25 +1,39 @@
+*{
+    margin: 0;
+    padding 0;
+}
 body{
-    border: 3px solid black;
+    border: 3px solid rgb(170, 213, 118);
+    background-color: rgb(4, 10, 0);
     box-sizing: border-box;
+    color: rgb(186, 230, 133);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
 }
+h2{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 header{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     position: relative;
     text-align: center;
-    /*justify-self: center;*/
-    /*display: flex;
-    flex: column;
-    align-items: center;
-    justify-content: space-between;*/
+}
+header h1{
+    padding: 40px;
+}
+header p{
+    padding-bottom: 40px;
+    font-size: 30px;
+    color: rgb(131, 197, 190);
 }
 nav{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    color: rgb(131, 197, 190);
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 0px 30px;
+    padding: 10px 30px;
     /* position: relative; */
 }
 .menuList{
@@ -40,13 +54,15 @@ nav{
 @media(max-width:768px){
     #reducedMenu{
     display: block;
+    color: rgb(131, 197, 190);
     }
     .menuList{
     position: absolute;
     top: 20px;
     right: 20px;
     gap: 10px;
-    background: gray;
+    background: rgb(170, 213, 118);
+    color: rgb(11, 29, 1);
     flex-direction: column;
     display: none;
     }
@@ -55,12 +71,11 @@ nav{
     }
 }
 main{
-    border: 2px solid black;
-    background-color: lightgray;
+    /* border: 2px solid black; */
+    background-color: rgb(26, 67, 1);
 }
 section{
-    border: 2px solid black;
-    border-radius: 3px;
+    /* border: 2px solid black; */
     padding: 5px;
 }
 a {
@@ -68,46 +83,52 @@ a {
   text-decoration: none;
 }
 #sobremim{
-    background: gray;
+    background: rgb(11, 29, 1);
+    color: rgb(4, 10, 0);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 10px;
 }
 #sobreFormacao{
-    background: blue;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 10px;
+    color: rgb(4, 10, 0);
 }
 #sobreProjetos{
-    background: red;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 10px;
+    color: rgb(4, 10, 0);
 }
 .sobreBox{
-    border: 2px solid black;
-    border-radius: 10px;
-    background: yellow;
+    border: 3px solid rgb(131, 197, 190);
+    border-radius: 20px;
+    background: rgb(170, 213, 118);
     margin: 20px;
     padding: 30px;
     text-align: left;
 }
 .formBox{
-    border: 2px solid black;
-    border-radius: 10px;
-    background: lightblue;
+    border: 3px solid rgb(131, 197, 190);
+    border-radius: 20px;
+    background: rgb(170, 213, 118);
+    color: rgb(11, 29, 1);
     margin: 20px;
     padding: 20px;
     text-align: left;
 }
 .projBox{
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 3px solid rgb(131, 197, 190);
+    border-radius: 20px;
+    background-color: rgb(11, 29, 1);
+    color: rgb(186, 230, 133);
     margin: 20px;
     padding: 10px;
     height: 8em;
     text-align: center;
+    align-content: center;
+    cursor: pointer;
 }
 ul{
     list-style: none;
@@ -119,7 +140,10 @@ h2{
 h4{
     justify-self: center;
 }
-#box1{
+#projetos{
+    background-color: rgb(26, 67, 1);
+}
+/* #box1{
     background-image: url("ilustracao-de-checklist-em-uma-prancheta_1308-181858.avif");
     background-repeat: no-repeat;
     background-size:100%;
@@ -138,41 +162,32 @@ h4{
     background-image: url("colorful-cartoon-calculator-illustration_1308-174688.avif");
     background-repeat: no-repeat;
     background-size: 100%;
-}
+} */
 #contato{
-    /* display: flex; */
-    
-    /* align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 25px; */
+    background-color: rgb(11, 29, 1);    
 }
 .lista-contatos{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: space-around;
 }
 .redes-sociais{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: center;
 }
 .contatoBox{
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 3px solid rgb(131, 197, 190);
+    border-radius: 20px;
     margin: 20px;
     text-align: center;
     padding: 20px;
     cursor: pointer;
 }
 footer{
-    /* margin: 5px; */
-    border: 2px solid black;
-    padding: 5px;
-    /* height: 40px; */
-    background-color: lightpink;
+    /* border: 2px solid black; */
+    padding: 20px;
+    background-color: rgb(4, 10, 0);
+    color: rgb(131, 197, 190);
     text-align: center;
-    /* align-content: center; */
 }
