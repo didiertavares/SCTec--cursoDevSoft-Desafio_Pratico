@@ -5,6 +5,7 @@
 body{
     border: 3px solid rgb(170, 213, 118);
     background-color: rgb(4, 10, 0);
+    /* background-color: gradient(#0f172a, #020617); */
     box-sizing: border-box;
     color: rgb(186, 230, 133);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -72,11 +73,7 @@ nav{
 }
 main{
     /* border: 2px solid black; */
-    background-color: rgb(26, 67, 1);
-}
-section{
-    /* border: 2px solid black; */
-    padding: 5px;
+    /* background-color: rgb(26, 67, 1); */
 }
 a {
   color: inherit;
@@ -89,11 +86,22 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 10px;
 }
+#divTechs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#formacao{
+    background-color: rgb(26, 67, 1);
+}
 #sobreFormacao{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 10px;
     color: rgb(4, 10, 0);
+}
+.formBox h4{
+    padding: 40px;
 }
 #sobreProjetos{
     display: grid;
@@ -108,6 +116,19 @@ a {
     margin: 20px;
     padding: 30px;
     text-align: left;
+}
+.techBox{
+    border: 3px solid rgb(131, 197, 190);
+    border-radius: 20px;
+    background-color: rgb(11, 29, 1);
+    color: rgb(186, 230, 133);
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer; 
+}
+#compTechs{
+    padding-top: 30px;
 }
 .formBox{
     border: 3px solid rgb(131, 197, 190);
@@ -143,26 +164,6 @@ h4{
 #projetos{
     background-color: rgb(26, 67, 1);
 }
-/* #box1{
-    background-image: url("ilustracao-de-checklist-em-uma-prancheta_1308-181858.avif");
-    background-repeat: no-repeat;
-    background-size:100%;
-}
-#box2{
-    background-image: url("14174600-imprimir-amostras-de-cores-pantone-gratis-foto.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#box3{
-    background-image: url("cronometrador-de-cronometro-cor-vermelha_78370-8122.avif");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-#box4{
-    background-image: url("colorful-cartoon-calculator-illustration_1308-174688.avif");
-    background-repeat: no-repeat;
-    background-size: 100%;
-} */
 #contato{
     background-color: rgb(11, 29, 1);    
 }
@@ -191,3 +192,17 @@ footer{
     color: rgb(131, 197, 190);
     text-align: center;
 }
+/* #projPopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .hidden{
+    display: none;
+} */
